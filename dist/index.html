@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.2.0/css/ol.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.2.0/build/ol.js"></script> 
+
+</head>
+<body>
+<div id="map" class="map"></div>
+<script src="Map_handler.js"></script>
+            
+<div class="jumbotron" style="background-color:#ffffff">
+    <div class="container">
+    
+    
+        <div class="header-text">
+                           
+            <h2>Trees Collector Project<h2>
+        </div> 
+        
+            <h4>Tree Type:<h4>
+            <select id="tree_type">
+<option value="Apple">Apple</option> <option value="Birch">Birch</option><option value="Palm">Palm</option><option value="Oak">Oak</option><option value="Pine">Pine</option>
+</select>
+
+			<h4 style="color:black">Latitude:<h4>
+            <input type="text" id="Latitude"></input>
+            <h4 style="color:black">Longitude:<h4>
+            <input type="text" id="Longitude"></input>
+            <h4 style="color:black">Tree Height:<h4>
+			<input type="text" id="tree_height"></input>
+			<h4 style="color:black">Tree Age:<h4>
+			<input type="text" id="tree_age"></input>
+</div>
+<button type="button" class="btn btn-success" onclick="submit();">Submit</button>
+    
+    </body>
+</html>
