@@ -143,19 +143,8 @@ function submit()
         tree_age: document.getElementById('tree_age').value,
     });
     xhr.send(data);
-    xhr.onload = function (e) {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          location.reload();
-          console.log(xhr.responseText);
-        } else {
-          console.error(xhr.statusText);
-        }
-      }
-    };
-    xhr.onerror = function (e) {
-      console.error(xhr.statusText);
-    };
+    location.reload();
+
     
     
 }
